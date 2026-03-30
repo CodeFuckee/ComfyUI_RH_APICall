@@ -100,8 +100,8 @@ class ImageUploaderNode:
 
         # Check if image size exceeds 10MB
         max_size_bytes = 10 * 1024 * 1024  # 10MB
-        if buffer_size > max_size_bytes:
-            raise Exception(f"Image size {buffer_size_mb:.2f}MB exceeds the 10MB limit.")
+        # if buffer_size > max_size_bytes:
+        #     raise Exception(f"Image size {buffer_size_mb:.2f}MB exceeds the 10MB limit.")
 
         # Prepare multipart/form-data
         files = {
